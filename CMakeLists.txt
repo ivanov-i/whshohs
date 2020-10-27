@@ -7,10 +7,11 @@ project(Webhooks VERSION 0.1.0)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-set(SOURCES main.cpp boost/ut.hpp)
+set(TEST_SOURCES main.cpp boost/ut.hpp)
 set(TESTS webhooks_test.cpp)
+set(SOURCES ContextVariables.h)
 
-add_executable(Webhooks ${SOURCES} ${TESTS})
+add_executable(Webhooks ${SOURCES} ${TESTS} ${TEST_SOURCES})
 
 configure_file(WebhooksConfig.h.in WebhooksConfig.h)
 
