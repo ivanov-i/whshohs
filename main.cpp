@@ -2,7 +2,10 @@
 
 #include <boost/ut.hpp>
 
+using namespace boost::ut;
+using namespace boost::ut::literals;
+
 int main(int argc, char* argv[])
 {
-	boost::ut::expect(true);
+	expect(1_i == 1);
 }
