@@ -9,7 +9,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 set(TEST_SOURCES main.cpp boost/ut.hpp)
 set(TESTS webhooks_test.cpp)
-set(SOURCES ContextVariables.h)
+set(SOURCES ContextVariables.h ContextVariables.cpp)
 
 add_executable(Webhooks ${SOURCES} ${TESTS} ${TEST_SOURCES})
 

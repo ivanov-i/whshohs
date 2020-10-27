@@ -11,15 +11,16 @@ using namespace std::string_view_literals;
 
 suite webhooks_test = []
 {
-	"Array variable"_test = []
+	"Array variable"_test = [&]
 	{
-		when("given variable name") = []
+		when("given variable name") = [&]
 		{
 			const auto name = L"variable"s;
 
-			then("can create variable") = []
+			then("can create variable") = [&]
 			{
 				using namespace ContextVariables;
+				const auto v = ArrayVariable{name};
 			};
 		};
 	};
