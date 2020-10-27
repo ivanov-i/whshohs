@@ -7,7 +7,7 @@ project(Webhooks VERSION 0.1.0)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-set(SOURCES main.cpp ut.hpp)
+set(SOURCES main.cpp boost/ut.hpp)
 
 add_executable(Webhooks ${SOURCES})
 
