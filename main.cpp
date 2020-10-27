@@ -1,11 +1,6 @@
 #include "WebhooksConfig.h"
+#include <iostream>
 
-#include <boost/ut.hpp>
-
-using namespace boost::ut;
-using namespace boost::ut::literals;
-
-int main(int argc, char* argv[])
+int main()
 {
-	expect(1_i == 1);
 }

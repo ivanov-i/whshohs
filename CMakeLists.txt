@@ -8,8 +8,9 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 set(SOURCES main.cpp boost/ut.hpp)
+set(TESTS webhooks_test.cpp)
 
-add_executable(Webhooks ${SOURCES})
+add_executable(Webhooks ${SOURCES} ${TESTS})
 
 configure_file(WebhooksConfig.h.in WebhooksConfig.h)
 
